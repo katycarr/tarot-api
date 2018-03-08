@@ -6,7 +6,6 @@ class CardsController < ApplicationController
 
   def create
     @card = Card.new(card_params)
-    byebug
     if @card.save
       render json: @card
     else
