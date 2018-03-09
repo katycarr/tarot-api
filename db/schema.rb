@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180308141109) do
+ActiveRecord::Schema.define(version: 20180308183040) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,8 @@ ActiveRecord::Schema.define(version: 20180308141109) do
     t.datetime "updated_at", null: false
     t.string "alternate_names", default: [], array: true
     t.string "element"
+    t.string "associated_class"
+    t.string "faculty"
   end
 
 end

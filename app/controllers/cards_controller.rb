@@ -13,6 +13,11 @@ class CardsController < ApplicationController
     end
   end
 
+  def show
+    @card = Card.find(params[:id])
+    render json: @card
+  end
+
   private
 
   def card_params

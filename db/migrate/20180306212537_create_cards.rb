@@ -4,7 +4,7 @@ class CreateCards < ActiveRecord::Migration[5.1]
       t.string :name
       t.string :number
       t.integer :arcana_id
-      t.integer :suit_id
+      t.integer :suit_id, default:nil
 
       t.timestamps
     end
