@@ -12,4 +12,28 @@ class Card < ApplicationRecord
     self.suit.faculty
   end
 
+  def names_include(q)
+    found = false
+    self.card_names.each do |name|
+      if name.downcase.include?(q.downcase)
+        found = true
+      end
+    end
+    found
+  end
+
+  def card_names
+    [self.name].concat(self.alternate_names)
+  end
+
+  def meanings_include(q)
+    found = false
+    self.meanings.each do |meaning|
+      if meaning.name.downcase.include?(q.downcase)
+        found = true
+      end
+    end
+    found
+  end
+
 end

@@ -1,3 +1,3 @@
 class ArcanaSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :name
 end

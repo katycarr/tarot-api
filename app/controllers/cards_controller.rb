@@ -1,6 +1,20 @@
 class CardsController < ApplicationController
   def index
-    @cards = Card.all
+    if params[:q]
+      @cards = Card.all.select do |card|
+        card.names_include(params[:q])
+      end
+    elsif params[:suit]
+      @cards = Card.all.select do |card|
+        card.suit.name.downcase == params[:suit].downcase
+      end
+    elsif params[:meaning]
+      @cards = Card.all.select do |card|
+        card.meanings_include(params[:meaning])
+      end
+    else
+      @cards = Card.all
+    end
     render json: @cards
   end
 
