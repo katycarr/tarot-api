@@ -15,6 +15,7 @@ Returns json data about cards
 * `q=[string]`
 * `suit=[string]`
 * `meaning=[string]`
+* `sort=[asc OR desc]`
 
 * **Sample Call:**
 `fetch('/cards?q=fool')`
