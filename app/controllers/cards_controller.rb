@@ -15,6 +15,13 @@ class CardsController < ApplicationController
     else
       @cards = Card.all
     end
+
+    if params[:sort].downcase == 'desc'
+      @cards = alphabetize(@cards)
+    elsif params[:sort].downcase == 'asc'
+      @cards = alphabetize(@cards).reverse
+    end
+
     render json: @cards
   end
 
@@ -29,7 +36,7 @@ class CardsController < ApplicationController
 
   def show
     @card = Card.find(params[:id])
-    render json: @card
+    render json: @card, serializer: CardDetailSerializer
   end
 
   private
@@ -37,4 +44,14 @@ class CardsController < ApplicationController
   def card_params
     params.require(:card).permit(:name, :number, :arcana_id, :suit_id, :img_url, :alternate_names => [])
   end
+
+
+
+  def alphabetize(cards)
+    cards.all.sort_by do |card|
+      card.remove_the.downcase
+    end
+  end
+
+
 end

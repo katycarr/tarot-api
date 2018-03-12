@@ -36,4 +36,14 @@ class Card < ApplicationRecord
     found
   end
 
+  def remove_the
+    if self.name.include?('The')
+      self.name[(4..-1)]
+    else
+      self.name
+    end
+  end
+
+
+
 end
