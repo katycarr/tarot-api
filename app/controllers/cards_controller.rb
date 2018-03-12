@@ -15,11 +15,12 @@ class CardsController < ApplicationController
     else
       @cards = Card.all
     end
-
-    if params[:sort].downcase == 'desc'
-      @cards = alphabetize(@cards)
-    elsif params[:sort].downcase == 'asc'
-      @cards = alphabetize(@cards).reverse
+    if params[:sort]
+      if params[:sort].downcase == 'desc'
+        @cards = alphabetize(@cards)
+      elsif params[:sort].downcase == 'asc'
+        @cards = alphabetize(@cards).reverse
+      end
     end
 
     render json: @cards

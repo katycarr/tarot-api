@@ -1,10 +1,26 @@
 ## Tarot Api
 
+**Models**
+----
+* Card
+  * name
+  * number
+  * arcana
+  * suit
+  * alternate_names
+  * img_url
+* Suit
+  * name
+  * alternate_names
+  * element
+  * associated_class
+  * faculty
+
 **Card Index**
 ----
 Returns json data about cards
 * **URL**
-/cards(.:params)
+`/cards(.:params)`
 
 * **Method:**
 `GET`
