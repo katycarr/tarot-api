@@ -25,6 +25,14 @@
   * id: integer
   * name: string
   * cards: array of cards
+* Spread `/spreads{/id}`
+  * id: integer
+  * name: string
+  * number_of_cards: integer
+  * positions: array of positions
+    * id: integer
+    * number: integer
+    * signifies: string
 
 **Optional Parameters:**
 * `q=[string]`
