@@ -3,18 +3,28 @@
 **Models**
 ----
 * Card
-  * name
-  * number
-  * arcana
-  * suit
-  * alternate_names
-  * img_url
+  * id: integer
+  * name: string
+  * number: string
+  * arcana: API resource
+  * suit: APIT resource
+  * alternate_names: array of strings
+  * img_url: string
+  * meanings: array of meanings
 * Suit
-  * name
-  * alternate_names
-  * element
-  * associated_class
-  * faculty
+  * id: integer
+  * name: string
+  * alternate_names: array of strings
+  * element: string
+  * associated_class: string
+  * faculty: string
+* Arcana
+  * id: integer
+  * name: string
+* Meaning
+  * id: integer
+  * name: string
+  * cards: array of cards
 
 **Card Index**
 ----
