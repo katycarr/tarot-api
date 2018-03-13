@@ -2,7 +2,7 @@
 
 **Models**
 ----
-* Card
+* Card `/cards{/id}`
   * id: integer
   * name: string
   * number: string
@@ -11,33 +11,22 @@
   * alternate_names: array of strings
   * img_url: string
   * meanings: array of meanings
-* Suit
+* Suit `/suits{/id}`
   * id: integer
   * name: string
   * alternate_names: array of strings
   * element: string
   * associated_class: string
   * faculty: string
-* Arcana
+* Arcana `/arcanas`
   * id: integer
   * name: string
-* Meaning
+* Meaning `/meanings{/id}`
   * id: integer
   * name: string
   * cards: array of cards
 
-**Card Index**
-----
-Returns json data about cards
-* **URL**
-`/cards(.:params)`
-
-* **Method:**
-`GET`
-
-* **URL Params**
-
-**Optional:**
+**Optional Parameters:**
 * `q=[string]`
 * `suit=[string]`
 * `meaning=[string]`
@@ -49,36 +38,12 @@ Returns json data about cards
 **Response:**
 ```
 [{
-  "name": "The Fool",
-  "number": "0",
-  "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/90/RWS_Tarot_00_Fool.jpg/220px-RWS_Tarot_00_Fool.jpg",
-  "alternate_names": [
-    "The Jester"
-  ],
-  "meanings": [
-    {
-      "id": 1,
-      "name": "carefree"
-    },
-    {
-      "id": 2,
-      "name": "foolish"
-    },
-    {
-      "id": 3,
-      "name": "important decisions"
-    },
-    {
-      "id": 4,
-      "name": "new beginnings"
-    },
-    {
-      "id": 5,
-      "name": "optimistic"
-    }
-  ],
+  "id":1,
+  "name":"The Fool",
+  "number":"0",
+  "alternate_names":["The Jester"],
   "arcana": {
-    "name": "Major"
+    "name":"Major"
   }
 }]
 ```
