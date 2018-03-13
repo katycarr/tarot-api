@@ -32,7 +32,7 @@
 * `meaning=[string]`
 * `sort=[asc OR desc]`
 
-* **Sample Call:**
+**Sample Call:**
 `fetch('/cards?q=fool')`
 
 **Response:**
