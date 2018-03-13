@@ -268,3 +268,8 @@ cross.positions.build(number:7, signifies:'you').save
 cross.positions.build(number:8, signifies:'environment').save
 cross.positions.build(number:9, signifies:'hopes and/or fears').save
 cross.positions.build(number:10, signifies:"what's to come").save
+
+dream = Spread.create(name:"Dream Exploration", number_of_cards:3)
+dream.positions.build(number:1, signifies:'relevance to life').save
+dream.positions.build(number:2, signifies:'lessons to be learned').save
+dream.positions.build(number:3, signifies:'application to life').save

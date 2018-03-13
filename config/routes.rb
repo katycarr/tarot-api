@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :arcanas, only: [:index, :show]
   resources :suits, only: [:index, :show]
   resources :meanings, only: [:index, :show]
+  resources :spreads, only: [:index, :show]
 end
