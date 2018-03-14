@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Tarot Api</h1>
+
+    <h2>Models</h2>
+    <hr>
+    <ul>
+      <li>
+        Card <code>'/cards{/id}'</code>
+        <ul>
+          <li>id: integer</li>
+          <li>name: string</li>
+          <li>number: string</li>
+          <li>arcana: API resource</li>
+          <li>suit: API resource</li>
+          <li>alternate_names: array of strings</li>
+          <li>img_url: string</li>
+          <li>meanings: array of meanings</li>
+        </ul>
+      </li>
+      <li>
+        Suit <code>'/suits{/id}'</code>
+        <ul>
+          <li>id: integer</li>
+          <li>name: string</li>
+          <li>alternate_names: array of strings</li>
+          <li>element: string</li>
+          <li>associated_class: string</li>
+          <li>faculty: string</li>
+        </ul>
+      </li>
+      <li>
+        Arcana <code>'/arcanas'</code>
+        <ul>
+          <li>id: integer</li>
+          <li>name: string</li>
+        </ul>
+      </li>
+      <li>
+        Meaning <code>'/meanings{/id}'</code>
+        <ul>
+          <li>id: integer</li>
+          <li>name: string</li>
+          <li>cards: array of cards</li>
+        </ul>
+      </li>
+      <li>
+        Spread <code>'/spreads{/id}'</code>
+        <ul>
+          <li>id: integer</li>
+          <li>name: string</li>
+          <li>number_of_cards: integer</li>
+          <li>
+            positions: array of positions
+            <ul>
+              <li>id: integer</li>
+              <li>number: integer</li>
+              <li>signifies: string</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <h2>Optional Parameters:</h2>
+    <ul>
+      <li><code>`q=[string]`</code></li>
+      <li><code>`suit=[string]`</code></li>
+      <li><code>`meaning=[string]`</code></li>
+      <li><code>`sort=[asc OR desc]`</code></li>
+    </ul>
+
+    <h2>Sample Call:</h2>
+    <p><code>`fetch('/cards?q=fool')`</code></p>
+
+    <h2>Response</h2>
+    <pre>
+      <code>
+        [{
+          "id":1,
+          "name":"The Fool",
+          "number":"0",
+          "alternate_names":["The Jester"],
+          "arcana": {
+            "name":"Major"
+          }
+        }]
+      </code>
+    </pre>
+
+
+  </body>
+</html>

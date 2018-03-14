@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :suits, only: [:index, :show]
   resources :meanings, only: [:index, :show]
   resources :spreads, only: [:index, :show]
+
+  get '*other', to: redirect('/')
 end
