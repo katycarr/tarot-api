@@ -44,6 +44,24 @@ class Card < ApplicationRecord
     end
   end
 
+  def upright_meanings
+    upright = self.card_meanings.select do |c_m|
+      c_m.reversed == false
+    end
+    upright.map do |c_m|
+      c_m.meaning
+    end
+  end
+
+  def reversed_meanings
+    reversed = self.card_meanings.select do |c_m|
+      c_m.reversed == true
+    end
+    reversed.map do |c_m|
+      c_m.meaning
+    end
+  end
+
 
 
 end

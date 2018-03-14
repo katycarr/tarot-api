@@ -273,3 +273,36 @@ dream = Spread.create(name:"Dream Exploration", number_of_cards:3)
 dream.positions.build(number:1, signifies:'relevance to life').save
 dream.positions.build(number:2, signifies:'lessons to be learned').save
 dream.positions.build(number:3, signifies:'application to life').save
+
+
+# Create reversed meanings
+def create_reverse_meaning(card, phrases)
+  card = Card.find_by(name:card)
+  phrases.each do |phrase|
+    meaning = Meaning.find_or_create_by(name:phrase)
+    CardMeaning.create(card_id:card.id, meaning_id:meaning.id, reversed:true)
+  end
+end
+
+create_reverse_meaning('The Fool', ['naive', 'foolish', 'risk-taking'])
+create_reverse_meaning('The Magician', ['manipulation', 'weakness', 'lack of imagination', 'self-doubt'])
+create_reverse_meaning('The High Priestess', ['hidden agendas', 'selfishness', 'lack of understanding'])
+create_reverse_meaning('The Empress', ['indecisiveness', 'over dependence', 'infidelity'])
+create_reverse_meaning('The Emperor', ['dominance', 'immaturity', 'indecisiveness', 'deceit'])
+create_reverse_meaning('The Hierophant', ['bad advice', 'single-mindedness', 'rebelliousness'])
+create_reverse_meaning('The Lovers', ['distrust', 'manipulation', 'unrealistic expectations'])
+create_reverse_meaning('The Chariot', ['failure', 'aggression', 'unexpected loss', 'self-indulgence'])
+create_reverse_meaning('Strength', ['self-doubt', 'weakness', 'alienation', 'lack of self discipline'])
+create_reverse_meaning('The Hermit', ['isolation', 'loneliness', 'risk-taking', 'self-pity', 'immaturity'])
+create_reverse_meaning('Wheel of Fortune', ['bad luck', 'lack of control', 'unforeseen events'])
+create_reverse_meaning('Justice', ['unfairness', 'dishonesty', 'intolerance', 'bias'])
+create_reverse_meaning('The Hanged Man', ['indecision', 'delay', 'martyrdom'])
+create_reverse_meaning('Death', ['resistance to change', 'stagnation', 'stuck', 'avoidance'])
+create_reverse_meaning('Temperance', ['imbalance', 'excess', 'impatience', 'self-indulgence'])
+create_reverse_meaning('The Devil', ['detachment', 'breaking free', 'emotional imprisonment', 'overcoming adversity'])
+create_reverse_meaning('The Tower', ['fear of change', 'procrastination', 'avoidance of disaster'])
+create_reverse_meaning('The Star', ['despair', 'discouragement', 'unwillingness to adapt', 'illness'])
+create_reverse_meaning('The Moon', ['self-deceit', 'confusion', 'mood swings'])
+create_reverse_meaning('The Sun', ['loneliness', 'depression', 'broken union'])
+create_reverse_meaning('Judgement', ['self-doubt', 'illness', 'fear of death', 'denial'])
+create_reverse_meaning('The World', ['disappointment', 'hesitation', 'unfinished business', 'lack of closure'])
