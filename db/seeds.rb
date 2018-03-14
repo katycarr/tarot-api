@@ -284,6 +284,7 @@ def create_reverse_meaning(card, phrases)
   end
 end
 
+#Major Arcana
 create_reverse_meaning('The Fool', ['naive', 'foolish', 'risk-taking'])
 create_reverse_meaning('The Magician', ['manipulation', 'weakness', 'lack of imagination', 'self-doubt'])
 create_reverse_meaning('The High Priestess', ['hidden agendas', 'selfishness', 'lack of understanding'])
@@ -306,3 +307,19 @@ create_reverse_meaning('The Moon', ['self-deceit', 'confusion', 'mood swings'])
 create_reverse_meaning('The Sun', ['loneliness', 'depression', 'broken union'])
 create_reverse_meaning('Judgement', ['self-doubt', 'illness', 'fear of death', 'denial'])
 create_reverse_meaning('The World', ['disappointment', 'hesitation', 'unfinished business', 'lack of closure'])
+
+# Coins
+create_reverse_meaning('King of Coins', ['authoritative', 'domineering', 'controlling', 'materialism'])
+create_reverse_meaning('Queen of Coins', ['imbalance', 'traumatic childhood', 'materialism', 'self-centered'])
+create_reverse_meaning('Knight of Coins', ['monotony', 'resistance to change', 'laziness', 'financial setbacks'])
+create_reverse_meaning('Page of Coins', ['short-term focus', 'lack of planning', 'bad news', 'youth'])
+create_reverse_meaning('Ten of Coins', ['financial failure', 'loneliness', 'family problems', 'financial risk'])
+create_reverse_meaning('Nine of Coins', ['over-investment in work', 'financial setbacks', 'bad investment', 'dishonesty'])
+create_reverse_meaning('Eight of Coins', ['perfectionism', 'boredom', 'arrogance', 'impatience'])
+create_reverse_meaning('Seven of Coins', ['exhaustion', 'impatience', 'unrewarding'])
+create_reverse_meaning('Six of Coins', ['debt', 'selfishness', 'over-extravagance', 'feelings of inadequacy', 'deceitful individuals'])
+create_reverse_meaning('Five of Coins', ['spiritual poverty', 'growth', 'recovery', 'self-confidence', 'hope', 'growing stronger'])
+create_reverse_meaning('Four of Coins', ['greed', 'materialism', 'consumed by money', 'distrust'])
+create_reverse_meaning('Three of Coins', ['lack of teamwork', 'fear of failure', 'disregard for skills', 'frustration in career', 'complacency'])
+create_reverse_meaning('Two of Coins', ['disorganization', 'out of balance', 'self-doubt', 'preoccupation with past', 'debt', 'recklessness'])
+create_reverse_meaning('Ace of Coins', ['lost opportunity', 'financial trouble', 'greed', 'financial gain that brings unhappiness', 'emptiness'])
