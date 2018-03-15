@@ -308,7 +308,7 @@ create_reverse_meaning('The Sun', ['loneliness', 'depression', 'broken union'])
 create_reverse_meaning('Judgement', ['self-doubt', 'illness', 'fear of death', 'denial'])
 create_reverse_meaning('The World', ['disappointment', 'hesitation', 'unfinished business', 'lack of closure'])
 
-# Coins
+#Coins
 create_reverse_meaning('King of Coins', ['authoritative', 'domineering', 'controlling', 'materialism'])
 create_reverse_meaning('Queen of Coins', ['imbalance', 'traumatic childhood', 'materialism', 'self-centered'])
 create_reverse_meaning('Knight of Coins', ['monotony', 'resistance to change', 'laziness', 'financial setbacks'])
@@ -355,3 +355,19 @@ create_reverse_meaning('Four of Swords', ['restlessness', 'burnout', 'overly cau
 create_reverse_meaning('Three of Swords', ['optimism', 'forgiveness', 'letting go', 'beginning of healing', 'releasing pain'])
 create_reverse_meaning('Two of Swords', ['indecision', 'confusion', 'disloyal connections', 'difficulty making decisions', 'misleading advice'])
 create_reverse_meaning('Ace of Swords', ['confusion', 'chaos', 'argumentative', 'legal problems', 'self-reflection'])
+
+#Wands
+create_reverse_meaning('King of Wands', ['impulsive', 'ruthless', 'conceited', 'greed', 'unreasonable expectations', 'misuse of power'])
+create_reverse_meaning('Queen of Wands', ['aggressive', 'demanding', 'stubborn', 'overspending', 'jealousy', 'overambitious'])
+create_reverse_meaning('Knight of Wands', ['haste', 'delays', 'frustration', 'impatience', 'loss of control'])
+create_reverse_meaning('Page of Wands', ['pessimism', 'lack of direction', 'domineering person', 'facing your fears', 'coming good news'])
+create_reverse_meaning('Ten of Wands', ['avoiding responsibility', 'self-doubt', 'unexpected support', 'delegate authority'])
+create_reverse_meaning('Nine of Wands', ['defensive', 'hesitation', 'fatigue', 'let go of insecurity', 'quiet your mind'])
+create_reverse_meaning('Eight of Wands', ['delays', 'frustration', 'negative thoughts', 'miscommunication'])
+create_reverse_meaning('Seven of Wands', ['giving up', 'overwhelmed', 'insecurity', 'unfounded fear of failure'])
+create_reverse_meaning('Six of Wands', ['egotism', 'miscommunication', 'fear of betrayal', 'lack of confidence'])
+create_reverse_meaning('Five of Wands', ['avoiding conflict', 'diversity', 'legal problems', 'be patient', 'coming settlement'])
+create_reverse_meaning('Four of Wands', ['transition', 'miscommunication', 'unfinished business', 'ego', 'fresh start'])
+create_reverse_meaning('Three of Wands', ['lack of preparation', 'unrealistic expectations', 'difficulty focusing', 'dreamer', 'possible betrayal'])
+create_reverse_meaning('Two of Wands', ['unhealthy partnership', 'miscommunication', 'depression', 'pessimism', 'unexpected trouble'])
+create_reverse_meaning('Ace of Wands', ['delays', 'lack of motivation', 'misunderstanding', 'overloaded with obligation', 'weighed down'])
