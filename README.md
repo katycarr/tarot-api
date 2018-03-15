@@ -10,7 +10,8 @@
   * suit: APIT resource
   * alternate_names: array of strings
   * img_url: string
-  * meanings: array of meanings
+  * upright_meanings: array of meanings
+  * reversed_meanings: array of meanings
 * Suit `/suits{/id}`
   * id: integer
   * name: string
