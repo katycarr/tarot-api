@@ -39,33 +39,65 @@ Suit.create(name:'Swords', element:'air', associated_class:'nobility and militar
 # CREATE MAJOR ARCANA
 Card.delete_all
 Card.reset_pk_sequence
-Card.create(name:'The Fool', alternate_names:['The Jester'], number:'0', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/9/90/RWS_Tarot_00_Fool.jpg/220px-RWS_Tarot_00_Fool.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The Magician', alternate_names:['The Magus, The Juggler'], number:'I', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/d/de/RWS_Tarot_01_Magician.jpg/150px-RWS_Tarot_01_Magician.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The High Priestess', alternate_names:['The Popess'], number:'II', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/220px-RWS_Tarot_02_High_Priestess.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The Empress', number:'III', img_url:"https://upload.wikimedia.org/wikipedia/en/d/d2/RWS_Tarot_03_Empress.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The Emperor', number:'IV', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/RWS_Tarot_04_Emperor.jpg/150px-RWS_Tarot_04_Emperor.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The Hierophant', alternate_names:['The Pope'], number:'V', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/RWS_Tarot_05_Hierophant.jpg/150px-RWS_Tarot_05_Hierophant.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The Lovers', number:'VI', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/d/db/RWS_Tarot_06_Lovers.jpg/220px-RWS_Tarot_06_Lovers.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The Chariot', number:'VII', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/RWS_Tarot_07_Chariot.jpg/220px-RWS_Tarot_07_Chariot.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'Strength', alternate_names:['Fortitude', 'Lust'], number:'VIII', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/RWS_Tarot_08_Strength.jpg/150px-RWS_Tarot_08_Strength.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The Hermit', number:'IX', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/RWS_Tarot_09_Hermit.jpg/220px-RWS_Tarot_09_Hermit.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'Wheel of Fortune', number:'X', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/RWS_Tarot_10_Wheel_of_Fortune.jpg/150px-RWS_Tarot_10_Wheel_of_Fortune.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'Justice', number:'XI', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/RWS_Tarot_11_Justice.jpg/220px-RWS_Tarot_11_Justice.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The Hanged Man', number:'XII', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/RWS_Tarot_12_Hanged_Man.jpg/150px-RWS_Tarot_12_Hanged_Man.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'Death', number:'XIII', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/RWS_Tarot_13_Death.jpg/220px-RWS_Tarot_13_Death.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'Temperance', number:'XIV', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/RWS_Tarot_14_Temperance.jpg/150px-RWS_Tarot_14_Temperance.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The Devil', number:'XV', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/5/55/RWS_Tarot_15_Devil.jpg/220px-RWS_Tarot_15_Devil.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The Tower', number:'XVI', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/5/53/RWS_Tarot_16_Tower.jpg/220px-RWS_Tarot_16_Tower.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The Star', number:'XVII', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/d/db/RWS_Tarot_17_Star.jpg/150px-RWS_Tarot_17_Star.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The Moon', number:'XVIII', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/RWS_Tarot_18_Moon.jpg/220px-RWS_Tarot_18_Moon.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The Sun', number:'XIX', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/1/17/RWS_Tarot_19_Sun.jpg/170px-RWS_Tarot_19_Sun.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'Judgement', number:'XX', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/RWS_Tarot_20_Judgement.jpg/220px-RWS_Tarot_20_Judgement.jpg", arcana_id:1, suit_id:1)
-Card.create(name:'The World', number:'XXI', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/RWS_Tarot_21_World.jpg/150px-RWS_Tarot_21_World.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:0, name:'The Fool', alternate_names:['The Jester'], number:'0', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/9/90/RWS_Tarot_00_Fool.jpg/220px-RWS_Tarot_00_Fool.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:1, name:'The Magician', alternate_names:['The Magus, The Juggler'], number:'I', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/d/de/RWS_Tarot_01_Magician.jpg/150px-RWS_Tarot_01_Magician.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:2, name:'The High Priestess', alternate_names:['The Popess'], number:'II', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/220px-RWS_Tarot_02_High_Priestess.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:3, name:'The Empress', number:'III', img_url:"https://upload.wikimedia.org/wikipedia/en/d/d2/RWS_Tarot_03_Empress.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:4, name:'The Emperor', number:'IV', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/RWS_Tarot_04_Emperor.jpg/150px-RWS_Tarot_04_Emperor.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:5, name:'The Hierophant', alternate_names:['The Pope'], number:'V', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/RWS_Tarot_05_Hierophant.jpg/150px-RWS_Tarot_05_Hierophant.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:6, name:'The Lovers', number:'VI', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/d/db/RWS_Tarot_06_Lovers.jpg/220px-RWS_Tarot_06_Lovers.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:7, name:'The Chariot', number:'VII', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/RWS_Tarot_07_Chariot.jpg/220px-RWS_Tarot_07_Chariot.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:8, name:'Strength', alternate_names:['Fortitude', 'Lust'], number:'VIII', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/RWS_Tarot_08_Strength.jpg/150px-RWS_Tarot_08_Strength.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:9, name:'The Hermit', number:'IX', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/RWS_Tarot_09_Hermit.jpg/220px-RWS_Tarot_09_Hermit.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:10, name:'Wheel of Fortune', number:'X', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/RWS_Tarot_10_Wheel_of_Fortune.jpg/150px-RWS_Tarot_10_Wheel_of_Fortune.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:11, name:'Justice', number:'XI', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/RWS_Tarot_11_Justice.jpg/220px-RWS_Tarot_11_Justice.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:12, name:'The Hanged Man', number:'XII', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/RWS_Tarot_12_Hanged_Man.jpg/150px-RWS_Tarot_12_Hanged_Man.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:13, name:'Death', number:'XIII', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/RWS_Tarot_13_Death.jpg/220px-RWS_Tarot_13_Death.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:14, name:'Temperance', number:'XIV', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/RWS_Tarot_14_Temperance.jpg/150px-RWS_Tarot_14_Temperance.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:15, name:'The Devil', number:'XV', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/5/55/RWS_Tarot_15_Devil.jpg/220px-RWS_Tarot_15_Devil.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:16, name:'The Tower', number:'XVI', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/5/53/RWS_Tarot_16_Tower.jpg/220px-RWS_Tarot_16_Tower.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:17, name:'The Star', number:'XVII', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/d/db/RWS_Tarot_17_Star.jpg/150px-RWS_Tarot_17_Star.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:18, name:'The Moon', number:'XVIII', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/RWS_Tarot_18_Moon.jpg/220px-RWS_Tarot_18_Moon.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:19, name:'The Sun', number:'XIX', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/1/17/RWS_Tarot_19_Sun.jpg/170px-RWS_Tarot_19_Sun.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:20, name:'Judgement', number:'XX', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/RWS_Tarot_20_Judgement.jpg/220px-RWS_Tarot_20_Judgement.jpg", arcana_id:1, suit_id:1)
+Card.create(integer:21, name:'The World', number:'XXI', img_url:"https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/RWS_Tarot_21_World.jpg/150px-RWS_Tarot_21_World.jpg", arcana_id:1, suit_id:1)
 
 
 #Create minor arcana
 ranks = ['Ace', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Page', 'Knight', 'Queen', 'King']
 suits = Suit.all.select {|suit| suit.name != '' }
+def parseNumber(string)
+  case string
+    when 'Ace'
+       1
+    when 'Two'
+       2
+    when 'Three'
+       3
+    when 'Four'
+       4
+    when 'Five'
+       5
+    when 'Six'
+       6
+    when 'Seven'
+       7
+    when 'Eight'
+       8
+    when 'Nine'
+       9
+    when 'Ten'
+       10
+    when 'Page'
+       11
+    when 'Knight'
+       12
+    when 'Queen'
+       13
+    when 'King'
+       14
+     end
+end
 
 ranks.each do |rank|
   suits.each do |suit|
@@ -74,9 +106,12 @@ ranks.each do |rank|
     card.number = rank
     card.arcana_id = 2
     card.suit_id = suit.id
+    card.integer = parseNumber(rank)
     card.save
   end
 end
+
+
 
 def addImg(card, img)
   found = Card.find_by(name:card)
