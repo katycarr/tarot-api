@@ -1,5 +1,5 @@
 class CardDetailSerializer < ActiveModel::Serializer
-  attributes :name, :number, :img_url
+  attributes :name, :number, :img_url, :integer
   has_many :upright_meanings, serializer: MeaningSerializer
   has_many :reversed_meanings, serializer: MeaningSerializer
   attribute :alternate_names, if: -> {object.alternate_names != []}
